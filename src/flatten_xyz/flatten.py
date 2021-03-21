@@ -5,9 +5,8 @@ class Flatten:
     def __init__(self):
         pass
 
-    def flatten(self,elements):
+    def flatten(self, elements):
         results = []
-        
         while elements:
             # Remove the last element from the list
             e = elements.pop() 
