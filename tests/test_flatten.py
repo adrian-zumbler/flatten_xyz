@@ -1,6 +1,6 @@
 import pytest
-from flatten_xyz import flatten
-from flatten_xyz.exception import InvalidArgumentException
+from src.flatten_xyz import flatten
+from src.flatten_xyz.exception import InvalidArgumentException
 
 def test_simple_flatten():
    f =  flatten.Flatten()
