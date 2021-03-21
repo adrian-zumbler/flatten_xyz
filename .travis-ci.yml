@@ -1,0 +1,16 @@
+language: python
+python:
+  - "2.7"
+  - "3.4"
+  - "3.5"
+  - "3.6"      # current default Python on Travis CI
+  - "3.7"
+  - "3.8"
+script:
+  - pytest
+
+deploy:
+  provider: pypi
+  username: "__token__"
+  password: pypi-"AgEIcHlwaS5vcmcCJDhiZDI3MmY5LTJmNjQtNGYyYi1hZDY4LTJiMmY3MWIzNTJiMQACPHsicGVybWlzc2lvbnMiOiB7InByb2plY3RzIjogWyJmbGF0dGVuLXh5eiJdfSwgInZlcnNpb24iOiAxfQAABiDhisaz_KdPUXhxA1nxeKsFsKgPIJnUkUeXHzrt1nBpHQ"
+  skip_existing: true
